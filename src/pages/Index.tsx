@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import { Link } from "react-router-dom";
-import { GraduationCap, BookOpen, Users, Briefcase, Clock, Beaker, CheckCircle, Star, TrendingUp, Award, Lightbulb } from "lucide-react";
+import { GraduationCap, BookOpen, Users, Briefcase, Clock, Beaker, CheckCircle, TrendingUp, Award, Lightbulb } from "lucide-react";
 
 const highlights = [
   { icon: BookOpen, text: "Advanced D.Voc. Courses" },
@@ -23,27 +23,6 @@ const stats = [
   { number: "500+", label: "Students Trained" },
   { number: "85%", label: "Placement Success" },
   { number: "50+", label: "Industry Partners" },
-];
-
-const testimonials = [
-  {
-    name: "Rajesh Patel",
-    course: "Natural Farming",
-    text: "This institute completely changed my career path. The practical training was outstanding and I got placed within 2 months of graduation.",
-    image: "👨‍🎓",
-  },
-  {
-    name: "Priya Shah",
-    course: "Hospitality Management",
-    text: "The industry connections and real-world experience made all the difference. Highly recommend this institute to anyone seeking skill-based education.",
-    image: "👩‍🎓",
-  },
-  {
-    name: "Arjun Kumar",
-    course: "Banking & Finance",
-    text: "Excellent faculty, modern infrastructure, and career support. I got placed at a reputed financial institution thanks to the training here.",
-    image: "👨‍💼",
-  },
 ];
 
 const Index = () => (
@@ -83,6 +62,12 @@ const Index = () => (
             className="border-2 border-primary-foreground text-primary-foreground font-semibold px-8 py-4 rounded-lg hover:bg-primary-foreground/15 transition-all text-lg"
           >
             Explore Courses
+          </Link>
+          <Link
+            to="/director-message"
+            className="border-2 border-accent text-accent font-semibold px-8 py-4 rounded-lg hover:bg-accent/15 transition-all text-lg"
+          >
+            Director Message
           </Link>
         </div>
       </div>
@@ -195,35 +180,6 @@ const Index = () => (
           >
             View All 9 Courses
           </Link>
-        </div>
-      </div>
-    </section>
-
-    {/* Testimonials */}
-    <section className="section-padding bg-navy-light animate-fadeIn">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12 animate-slideUp">
-          <h2 className="section-title">Student Success Stories</h2>
-          <div className="gold-divider" />
-        </div>
-        <div className="grid md:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, index) => (
-            <div key={testimonial.name} className="bg-card rounded-xl p-6 border border-border shadow-sm hover:shadow-md transition-all animate-slideUp" style={{ animationDelay: `${index * 0.1}s` }}>
-              <div className="flex items-center gap-4 mb-4">
-                <div className="text-4xl">{testimonial.image}</div>
-                <div>
-                  <h4 className="font-semibold text-primary">{testimonial.name}</h4>
-                  <p className="text-xs text-accent font-medium">{testimonial.course}</p>
-                </div>
-              </div>
-              <div className="flex mb-3">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-accent text-accent" />
-                ))}
-              </div>
-              <p className="text-sm text-muted-foreground italic">{testimonial.text}</p>
-            </div>
-          ))}
         </div>
       </div>
     </section>

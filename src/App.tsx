@@ -17,6 +17,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
 import ContactSupport from "./pages/ContactSupport";
 import AnimationShowcase from "./pages/AnimationShowcase";
+import DirectorMessage from "./pages/DirectorMessage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -41,6 +42,7 @@ const App = () => (
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-conditions" element={<TermsConditions />} />
           <Route path="/contact" element={<ContactSupport />} />
+          <Route path="/director-message" element={<DirectorMessage />} />
           <Route path="/animations" element={<AnimationShowcase />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, MapPin, GraduationCap } from "lucide-react";
+import { Menu, X, Phone, MapPin, GraduationCap, Instagram } from "lucide-react";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -28,6 +28,14 @@ const Header = () => {
           </a>
           <a href="https://maps.google.com/?q=Near+Yogeshwar+Char+Rasta,+Anjar" target="_blank" rel="noopener noreferrer" className="hidden sm:flex items-center gap-1 hover:text-accent transition-colors cursor-pointer">
             <MapPin className="w-3 h-3" /> Near Yogeshwar Char Rasta, Anjar
+          </a>
+          <a
+            href="https://www.instagram.com/kgkvocational?igsh=ODBxcnpteXNxd296"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1 hover:text-accent transition-colors cursor-pointer"
+          >
+            <Instagram className="w-3 h-3" /> Instagram
           </a>
         </div>
         <Link to="/admission" className="flex items-center gap-1 text-accent font-semibold hover:opacity-80 transition-opacity cursor-pointer">
