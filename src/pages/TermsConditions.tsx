@@ -81,7 +81,7 @@ const TermsConditions = () => (
               <p className="font-semibold text-primary">Shree KGK Vocational Education Institute</p>
               <p>Near Yogeshwar Char Rasta, Mistri Boarding, Anjar, Kutch</p>
               <p>Phone: 8469925826</p>
-              <p>Email: info@kgkinstitute.com</p>
+              <p>Email: kgkdvoc@gmail.com</p>
             </div>
           </div>
 

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { GraduationCap, BookOpen, Users, Briefcase, Clock, Beaker, CheckCircle, TrendingUp, Award, Lightbulb } from "lucide-react";
 
 const highlights = [
-  { icon: BookOpen, text: "Advanced D.Voc. Courses" },
+  { icon: BookOpen, text: "Advanced. D.Voc. Courses" },
   { icon: Clock, text: "2 Years Duration" },
   { icon: Beaker, text: "60% Practical + 40% Theory" },
   { icon: GraduationCap, text: "For 12th Pass Students" },
@@ -16,13 +16,6 @@ const whyUs = [
   { icon: Lightbulb, text: "Skill Development Workshops" },
   { icon: Briefcase, text: "Internship & Placement Support" },
   { icon: Award, text: "Modern Learning Environment" },
-];
-
-const stats = [
-  { number: "09", label: "Advanced Courses" },
-  { number: "500+", label: "Students Trained" },
-  { number: "85%", label: "Placement Success" },
-  { number: "50+", label: "Industry Partners" },
 ];
 
 const Index = () => (
@@ -69,20 +62,6 @@ const Index = () => (
           >
             Director Message
           </Link>
-        </div>
-      </div>
-    </section>
-
-    {/* Statistics */}
-    <section className="bg-primary text-primary-foreground py-12 animate-slideUp">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {stats.map((stat, index) => (
-            <div key={stat.label} className="text-center animate-slideUp" style={{ animationDelay: `${index * 0.1}s` }}>
-              <div className="text-4xl md:text-5xl font-display font-bold text-accent mb-2">{stat.number}</div>
-              <div className="text-sm md:text-base opacity-90">{stat.label}</div>
-            </div>
-          ))}
         </div>
       </div>
     </section>
@@ -198,7 +177,7 @@ const Index = () => (
           </div>
           <div>
             <h3 className="font-display font-bold text-lg text-primary mb-3">🎓 Certification</h3>
-            <p className="text-muted-foreground">KSKV Kachchh University D.Voc. Certificate</p>
+            <p className="text-muted-foreground">KSKV Kachchh University Advanced. D.Voc. Certificate</p>
           </div>
         </div>
       </div>
@@ -221,7 +200,7 @@ const Index = () => (
           </div>
         </div>
         <div className="text-base opacity-85 border-t border-primary-foreground/20 pt-8">
-          <p>Phone: <span className="font-semibold">8469925826</span> | Email: <span className="font-semibold">info@kgkinstitute.com</span></p>
+          <p>Phone: <span className="font-semibold">8469925826</span> | Email: <span className="font-semibold">kgkdvoc@gmail.com</span></p>
         </div>
       </div>
     </section>

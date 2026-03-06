@@ -132,7 +132,7 @@ const CourseDetail = () => {
                     <Award className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
                       <div className="text-sm font-semibold text-primary">Certification</div>
-                      <div className="text-xs text-muted-foreground">D.Voc. Certificate</div>
+                      <div className="text-xs text-muted-foreground">Advanced. D.Voc. Certificate</div>
                     </div>
                   </div>
                 </div>
@@ -276,7 +276,7 @@ const CourseDetail = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-primary text-sm">Certificate</div>
-                  <div className="text-xs text-muted-foreground">D.Voc. accredited</div>
+                  <div className="text-xs text-muted-foreground">Advanced. D.Voc. accredited</div>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -296,7 +296,7 @@ const CourseDetail = () => {
         <div className="max-w-6xl mx-auto px-4 py-12">
           <div className="bg-gradient-to-r from-accent/10 to-accent/5 rounded-2xl p-8 border-2 border-accent/30 text-center">
             <h2 className="font-display font-bold text-3xl text-primary mb-3">Ready to Start Your Career?</h2>
-            <p className="text-muted-foreground mb-6 text-lg">Join our advanced D.Voc. program and transform your future</p>
+            <p className="text-muted-foreground mb-6 text-lg">Join our Advanced. D.Voc. program and transform your future</p>
             <Link
               to="/admission"
               className="inline-block bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-10 py-4 rounded-lg transition-all text-lg"

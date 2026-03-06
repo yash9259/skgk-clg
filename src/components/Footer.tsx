@@ -78,7 +78,7 @@ const Footer = () => (
             </p>
             <p className="flex items-center gap-2">
               <Mail className="w-4 h-4 shrink-0 text-accent" />
-              <a href="mailto:info@kgkinstitute.com" className="hover:text-accent transition-colors">info@kgkinstitute.com</a>
+              <a href="mailto:kgkdvoc@gmail.com" className="hover:text-accent transition-colors">kgkdvoc@gmail.com</a>
             </p>
           </div>
           
@@ -125,7 +125,7 @@ const Footer = () => (
           <div className="text-sm opacity-80 text-right">
             <p className="font-semibold text-accent mb-1">Accreditation</p>
             <p>AICTE Approved Program</p>
-            <p>D.Voc. Certified Institute</p>
+            <p>Advanced. D.Voc. Certified Institute</p>
           </div>
         </div>
 

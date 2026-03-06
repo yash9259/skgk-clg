@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Courses = () => (
   <Layout>
-    <PageBanner title="Our Courses" subtitle="Advanced D.Voc. Courses – 2 Years Duration" />
+    <PageBanner title="Our Courses" subtitle="Advanced. D.Voc. Courses – 2 Years Duration" />
 
     <section className="section-padding bg-background">
       <div className="max-w-6xl mx-auto">

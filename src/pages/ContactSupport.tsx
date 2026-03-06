@@ -120,10 +120,10 @@ const ContactSupport = () => (
                     <h3 className="font-semibold text-primary mb-2">Email</h3>
                     <p className="text-muted-foreground">Reach us via email anytime</p>
                     <a
-                      href="mailto:info@kgkinstitute.com"
+                      href="mailto:kgkdvoc@gmail.com"
                       className="text-accent hover:opacity-80 transition-opacity font-medium mt-1 inline-block"
                     >
-                      info@kgkinstitute.com
+                      kgkdvoc@gmail.com
                     </a>
                   </div>
                 </div>
@@ -153,7 +153,7 @@ const ContactSupport = () => (
         <div className="bg-navy-light rounded-xl p-8 border border-border text-center">
           <h3 className="text-2xl font-display font-bold text-primary mb-3">Ready to Apply?</h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Start your journey towards a successful career with our Advanced D.Voc. programs.
+            Start your journey towards a successful career with our Advanced. D.Voc. programs.
           </p>
           <Link
             to="/admission"
