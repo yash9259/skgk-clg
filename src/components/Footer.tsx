@@ -111,7 +111,7 @@ const Footer = () => (
 
       {/* Bottom Footer */}
       <div className="mt-8 pt-6">
-        <div className="grid md:grid-cols-3 gap-6 mb-6">
+        <div className="grid md:grid-cols-2 gap-6 mb-6">
           <div className="text-sm opacity-80">
             <p className="font-semibold text-accent mb-1">Hours</p>
             <p>Mon - Fri: 9:00 AM - 5:00 PM</p>
@@ -121,11 +121,6 @@ const Footer = () => (
             <p className="font-semibold text-accent mb-1">Affiliation</p>
             <p>KSKV Kachchh University</p>
             <p>Recognized by Government of Gujarat</p>
-          </div>
-          <div className="text-sm opacity-80 text-right">
-            <p className="font-semibold text-accent mb-1">Accreditation</p>
-            <p>AICTE Approved Program</p>
-            <p>Advanced. D.Voc. Certified Institute</p>
           </div>
         </div>
 

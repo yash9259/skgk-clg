@@ -46,6 +46,30 @@ const accounting3 = "/Cours img /ACCOUNTING & TAXATION3.png";
 
 export const courseSummaries = [
   {
+    slug: "management-entrepreneurship",
+    icon: TrendingUp,
+    name: "Management & Entrepreneurship",
+    image: management1,
+    desc: "Learn business management, marketing, and startup development.",
+    careers: "Business Executive, Entrepreneur, Office Manager",
+  },
+  {
+    slug: "banking-finance",
+    icon: Landmark,
+    name: "Banking & Finance",
+    image: banking1,
+    desc: "Learn financial management, banking operations, and accounting basics.",
+    careers: "Banking Assistant, Financial Executive",
+  },
+  {
+    slug: "accounting-taxation",
+    icon: Calculator,
+    name: "Accounting & Taxation",
+    image: accounting1,
+    desc: "Learn GST, income tax basics, accounting software, and financial records.",
+    careers: "Accountant, Tax Consultant Assistant",
+  },
+  {
     slug: "natural-farming",
     icon: Sprout,
     name: "Natural Farming",
@@ -70,14 +94,6 @@ export const courseSummaries = [
     careers: "Nutrition Assistant, Community Worker, Self Employment",
   },
   {
-    slug: "management-entrepreneurship",
-    icon: TrendingUp,
-    name: "Management & Entrepreneurship",
-    image: management1,
-    desc: "Learn business management, marketing, and startup development.",
-    careers: "Business Executive, Entrepreneur, Office Manager",
-  },
-  {
     slug: "hospitality-tourism-hotel-management",
     icon: Hotel,
     name: "Hospitality, Tourism & Hotel Management",
@@ -100,22 +116,6 @@ export const courseSummaries = [
     image: healthcare1,
     desc: "Learn basic healthcare assistance and patient care skills.",
     careers: "Hospital Assistant, Clinic Support Staff",
-  },
-  {
-    slug: "banking-finance",
-    icon: Landmark,
-    name: "Banking & Finance",
-    image: banking1,
-    desc: "Learn financial management, banking operations, and accounting basics.",
-    careers: "Banking Assistant, Financial Executive",
-  },
-  {
-    slug: "accounting-taxation",
-    icon: Calculator,
-    name: "Accounting & Taxation",
-    image: accounting1,
-    desc: "Learn GST, income tax basics, accounting software, and financial records.",
-    careers: "Accountant, Tax Consultant Assistant",
   },
 ];
 
