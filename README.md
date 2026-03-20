@@ -71,3 +71,107 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+## Google Sheets integration for Admission Inquiry
+
+Google Sheet used:
+
+https://docs.google.com/spreadsheets/d/1B_iiq6hjpwQCGbalFdZEKRc0Cwo_kVf_Dnt2GnvZUYM/edit
+
+Target tab: Sheet1
+
+The admission inquiry form on /admission sends these fields:
+
+- name
+- email
+- contactNumber
+- course
+- submittedAt
+- source
+
+### 1) Add environment variable
+
+Create `.env` from `.env.example` and set:
+
+```env
+VITE_GOOGLE_SHEETS_WEB_APP_URL=https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec
+```
+
+### 2) Create a Google Sheet
+
+In Sheet1, add this header row exactly in row 1:
+
+Timestamp | Name | Email | Contact Number | Course | Source
+
+### 3) Add Google Apps Script
+
+In Google Sheet, open Extensions > Apps Script and paste:
+
+```javascript
+function doGet() {
+	return ContentService
+		.createTextOutput(JSON.stringify({ success: true, message: "Web app is running" }))
+		.setMimeType(ContentService.MimeType.JSON);
+}
+
+function doPost(e) {
+	try {
+		var spreadsheetId = "1B_iiq6hjpwQCGbalFdZEKRc0Cwo_kVf_Dnt2GnvZUYM";
+		var sheetName = "Sheet1";
+		var sheet = SpreadsheetApp.openById(spreadsheetId).getSheetByName(sheetName);
+
+		if (!sheet) {
+			throw new Error("Sheet1 not found");
+		}
+
+		var data = {};
+		if (e && e.postData && e.postData.contents) {
+			try {
+				data = JSON.parse(e.postData.contents);
+			} catch (parseError) {
+				data = {};
+			}
+		}
+
+		sheet.appendRow([
+			data.submittedAt || new Date().toISOString(),
+			data.name || "",
+			data.email || "",
+			data.contactNumber || "",
+			data.course || "",
+			data.source || "admission-inquiry",
+		]);
+
+		return ContentService
+			.createTextOutput(JSON.stringify({ success: true }))
+			.setMimeType(ContentService.MimeType.JSON);
+	} catch (error) {
+		return ContentService
+			.createTextOutput(
+				JSON.stringify({
+					success: false,
+					error: (error && error.message) || "Unknown error",
+				})
+			)
+			.setMimeType(ContentService.MimeType.JSON);
+	}
+}
+```
+
+### 4) Deploy script
+
+- Deploy > New deployment
+- Select type: Web app
+- Execute as: Me
+- Who has access: Anyone
+
+Copy the deployment URL and set it in .env as VITE_GOOGLE_SHEETS_WEB_APP_URL.
+
+### 5) Run app
+
+```sh
+npm install
+npm run dev
+```
+
+Submit the Admission Inquiry form and check new row in your Google Sheet.

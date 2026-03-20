@@ -141,9 +141,9 @@ const Index = () => (
         </div>
         <div className="grid md:grid-cols-3 gap-6 mb-8">
           {[
-            { icon: "🌾", name: "Natural Farming", desc: "Sustainable agriculture and organic farming" },
-            { icon: "🏭", name: "Agro Processing", desc: "Food processing and value addition" },
-            { icon: "💼", name: "Management", desc: "Business and entrepreneurship skills" },
+            { icon: "📈", name: "Management & Entrepreneurship", desc: "Learn business management, marketing, and startup development." },
+            { icon: "🏦", name: "Banking & Finance", desc: "Learn financial management, banking operations, and accounting basics." },
+            { icon: "📊", name: "Accounting & Taxation", desc: "Learn GST, income tax basics, accounting software, and financial records." },
           ].map((course, index) => (
             <div key={course.name} className="bg-card rounded-xl p-6 border border-border hover:shadow-lg transition-all animate-slideUp" style={{ animationDelay: `${index * 0.1}s` }}>
               <div className="text-4xl mb-3">{course.icon}</div>

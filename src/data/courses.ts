@@ -1,48 +1,48 @@
 import { Calculator, Factory, HeartPulse, Home, Hotel, Landmark, Sparkles, Sprout, TrendingUp } from "lucide-react";
 
 // Natural Farming Images
-const naturalFarming1 = "/Cours img /NATURAL FARMING1.png";
-const naturalFarming2 = "/Cours img /NATURAL FARMING2.png";
-const naturalFarming3 = "/Cours img /NATURAL FARMING3.png";
+const naturalFarming1 = "/Coursimg /NATURAL FARMING1.png";
+const naturalFarming2 = "/Coursimg /NATURAL FARMING2.png";
+const naturalFarming3 = "/Coursimg /NATURAL FARMING3.png";
 
 // Agro Processing Images
-const agroProcessing1 = "/Cours img /AGRO PROCESSING1.png";
-const agroProcessing2 = "/Cours img /AGRO PROCESSING2.png";
+const agroProcessing1 = "/Coursimg /AGRO PROCESSING1.png";
+const agroProcessing2 = "/Coursimg /AGRO PROCESSING2.png";
 
 // Home Science Images
-const homeScience1 = "/Cours img /HOME SCIENCE1.png";
-const homeScience2 = "/Cours img /HOME SCIENCE2.png";
-const homeScience3 = "/Cours img /HOME SCIENCE3.png";
+const homeScience1 = "/Coursimg /HOME SCIENCE1.png";
+const homeScience2 = "/Coursimg /HOME SCIENCE2.png";
+const homeScience3 = "/Coursimg /HOME SCIENCE3.png";
 
 // Management & Entrepreneurship Images
-const management1 = "/Cours img /MANAGEMENT & ENTREPRENEURSHIP1.png";
-const management2 = "/Cours img /MANAGEMENT & ENTREPRENEURSHIP2.png";
-const management3 = "/Cours img /MANAGEMENT & ENTREPRENEURSHIP3.png";
+const management1 = "/Coursimg /MANAGEMENT & ENTREPRENEURSHIP1.png";
+const management2 = "/Coursimg /MANAGEMENT & ENTREPRENEURSHIP2.png";
+const management3 = "/Coursimg /MANAGEMENT & ENTREPRENEURSHIP3.png";
 
 // Hospitality, Tourism & Hotel Management Images
-const hospitality1 = "/Cours img /HOSPITALITY, TOURISM & HOTEL MANAGEMENT1.png";
-const hospitality2 = "/Cours img /HOSPITALITY, TOURISM & HOTEL MANAGEMENT2.png";
-const hospitality3 = "/Cours img /HOSPITALITY, TOURISM & HOTEL MANAGEMENT3.png";
+const hospitality1 = "/Coursimg /HOSPITALITY, TOURISM & HOTEL MANAGEMENT1.png";
+const hospitality2 = "/Coursimg /HOSPITALITY, TOURISM & HOTEL MANAGEMENT2.png";
+const hospitality3 = "/Coursimg /HOSPITALITY, TOURISM & HOTEL MANAGEMENT3.png";
 
 // Beauty & Wellness Images
-const beauty1 = "/Cours img /BEAUTY & WELLNESS1.png";
-const beauty2 = "/Cours img /BEAUTY & WELLNESS2.png";
-const beauty3 = "/Cours img /BEAUTY & WELLNESS3.png";
+const beauty1 = "/Coursimg /BEAUTY & WELLNESS1.png";
+const beauty2 = "/Coursimg /BEAUTY & WELLNESS2.png";
+const beauty3 = "/Coursimg /BEAUTY & WELLNESS3.png";
 
 // Healthcare Images
-const healthcare1 = "/Cours img /HEALTHCARE1.png";
-const healthcare2 = "/Cours img /HEALTHCARE2.png";
-const healthcare3 = "/Cours img /HEALTHCARE3.png";
+const healthcare1 = "/Coursimg /HEALTHCARE1.png";
+const healthcare2 = "/Coursimg /HEALTHCARE2.png";
+const healthcare3 = "/Coursimg /HEALTHCARE3.png";
 
 // Banking & Finance Images
-const banking1 = "/Cours img /BANKING & FINANCE1.png";
-const banking2 = "/Cours img /BANKING & FINANCE2.png";
-const banking3 = "/Cours img /BANKING & FINANCE3.png";
+const banking1 = "/Coursimg /BANKING & FINANCE1.png";
+const banking2 = "/Coursimg /BANKING & FINANCE2.png";
+const banking3 = "/Coursimg /BANKING & FINANCE3.png";
 
 // Accounting & Taxation Images
-const accounting1 = "/Cours img /ACCOUNTING & TAXATION1.png";
-const accounting2 = "/Cours img /ACCOUNTING & TAXATION2.png";
-const accounting3 = "/Cours img /ACCOUNTING & TAXATION3.png";
+const accounting1 = "/Coursimg /ACCOUNTING & TAXATION1.png";
+const accounting2 = "/Coursimg /ACCOUNTING & TAXATION2.png";
+const accounting3 = "/Coursimg /ACCOUNTING & TAXATION3.png";
 
 export const courseSummaries = [
   {
